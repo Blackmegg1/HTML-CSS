@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.w {
+    width: 1800px;
+    margin:auto;
+}
+.header {
+    height: 60px;
+    background-color: aqua;
+    margin:30px auto;
+}
+.logo {
+    float: left;
+    height: 60px;
+    width: 400px;
+    background-color: blue;
+    line-height: 60px;
+    text-align: center;
+}
+.nav {
+    /* 没有给nav宽度，方便日后添加新标签 */
+    float: left;
+    margin-left: 80px;
+}
+.nav ul li {
+    float: left;
+    margin: 0 20px;
+}
+.nav ul li a {
+    /* a转化为块级元素设置宽高，不指定宽度，用padding撑开盒子避免了文字不一样多带来的麻烦 */
+    display: block;
+    height: 60px;
+    padding: 0 20px;
+    line-height: 60px;
+    font-size: 24px;
+    color: #050505;
+}
+.nav ul li a:hover {
+    border-bottom:2px solid skyblue ;
+    color: skyblue;
+}
+.search {
+    float: left;
+    width: 550px;
+    height: 60px;
+    margin-left: 90px;
+    background-color: red;
+}
+.search input {
+    /* 因为块级元素之间默认有空隙，所以使用float */
+    float: left;
+    width: 450px;
+    height: 58px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.search button {
+    /* 因为块级元素之间默认有空隙，所以使用float */
+    float: left;
+    /* 注意这里button的width+input的width必须等于search的width，不然button会掉下去 */
+    width: 84px;
+    height: 60px;
+    background-color: #00a4ff;
+    /* 手动去掉button边框 */
+    border: 0;
+
+}
+.user {
+    float: right;
+    margin-right:40px;
+    line-height: 60px;
+    font-size: 20px;
+    color: #444;
+}
