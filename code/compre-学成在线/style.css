@@ -83,3 +83,75 @@ a {
     font-size: 20px;
     color: #444;
 }
+.banner {
+    height: 450px;
+    background-color: purple;
+}
+.banner .w {
+    height: 450px;
+    background-color: brown;
+}
+.subnav {
+    float: left;
+    width: 250px;
+    height: 450px;
+    background:rgba(0, 0, 0, 0.3);
+}
+.subnav ul li {
+    height: 50px;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.subnav ul li a {
+    font-size: 18px;
+    color: rgb(255, 245, 245);
+}
+.subnav ul li a:hover {
+    color: #00a4ff;
+}
+.subnav ul li a span {
+    float: right;
+}
+.course {
+    float: right;
+    height: 350px;
+    width: 230px;
+    margin-top: 40px;
+    background-color: pink;
+}
+/* 我的课程表 */
+.course h2 {
+    height: 50px;
+    background-color: skyblue;
+    text-align: center;
+    line-height: 50px;
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+}
+.course .bd {
+    padding: 0 20px;
+}
+.course .bd ul li {
+    height: 50px;
+    padding: 12px 0;
+    font-size: 16px;
+    color: rgb(90, 89, 89);
+    border-bottom: 1px solid rgb(163, 163, 163);
+}
+.course .bd a {
+    color: rgb(44, 44, 44);
+}
+.course .bd ul a:hover{
+    color: #00a4ff;
+}
+.course .more {
+    height: 50px;
+    margin-top: 10px;
+    border: 1px solid #3787ff;
+    text-align: center;
+    line-height: 50px;
+}
+.course .more a {
+    color: #3787ff;
+    font-weight: 700;
+}
