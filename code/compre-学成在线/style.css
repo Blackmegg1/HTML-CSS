@@ -2,38 +2,48 @@
     margin: 0;
     padding: 0;
 }
+
 li {
     list-style: none;
 }
+
 a {
     text-decoration: none;
 }
+
 .w {
     width: 1800px;
-    margin:auto;
+    margin: auto;
 }
+
 .header {
     height: 60px;
     background-color: aqua;
-    margin:30px auto;
+    margin: 30px auto;
 }
+
 .logo {
     float: left;
     height: 60px;
     width: 400px;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.514);
+    font-size: 23px;
+    font-weight: 700;
     line-height: 60px;
     text-align: center;
 }
+
 .nav {
     /* 没有给nav宽度，方便日后添加新标签 */
     float: left;
     margin-left: 80px;
 }
+
 .nav ul li {
     float: left;
     margin: 0 20px;
 }
+
 .nav ul li a {
     /* a转化为块级元素设置宽高，不指定宽度，用padding撑开盒子避免了文字不一样多带来的麻烦 */
     display: block;
@@ -43,10 +53,12 @@ a {
     font-size: 24px;
     color: #050505;
 }
+
 .nav ul li a:hover {
-    border-bottom:2px solid skyblue ;
+    border-bottom: 2px solid skyblue;
     color: skyblue;
 }
+
 .search {
     float: left;
     width: 550px;
@@ -54,6 +66,7 @@ a {
     margin-left: 90px;
     background-color: red;
 }
+
 .search input {
     /* 因为块级元素之间默认有空隙，所以使用float */
     float: left;
@@ -65,6 +78,7 @@ a {
     font-size: 18px;
     padding-left: 15px;
 }
+
 .search button {
     /* 因为块级元素之间默认有空隙，所以使用float */
     float: left;
@@ -76,42 +90,51 @@ a {
     border: 0;
 
 }
+
 .user {
     float: right;
-    margin-right:40px;
+    margin-right: 40px;
     line-height: 60px;
     font-size: 20px;
     color: #444;
 }
+
 .banner {
     height: 450px;
     background-color: purple;
 }
-.banner .w {
+
+.banner>.w {
     height: 450px;
     background-color: brown;
 }
+
 .subnav {
     float: left;
     width: 250px;
     height: 450px;
-    background:rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.233);
 }
+
 .subnav ul li {
     height: 50px;
     padding: 0 20px;
     line-height: 50px;
 }
+
 .subnav ul li a {
     font-size: 18px;
     color: rgb(255, 245, 245);
 }
+
 .subnav ul li a:hover {
     color: #00a4ff;
 }
+
 .subnav ul li a span {
     float: right;
 }
+
 .course {
     float: right;
     height: 350px;
@@ -119,6 +142,7 @@ a {
     margin-top: 40px;
     background-color: pink;
 }
+
 /* 我的课程表 */
 .course h2 {
     height: 50px;
@@ -128,9 +152,11 @@ a {
     font-size: 23px;
     color: rgb(255, 255, 255);
 }
+
 .course .bd {
     padding: 0 20px;
 }
+
 .course .bd ul li {
     height: 50px;
     padding: 12px 0;
@@ -138,12 +164,15 @@ a {
     color: rgb(90, 89, 89);
     border-bottom: 1px solid rgb(163, 163, 163);
 }
+
 .course .bd a {
     color: rgb(44, 44, 44);
 }
-.course .bd ul a:hover{
+
+.course .bd ul a:hover {
     color: #00a4ff;
 }
+
 .course .more {
     height: 50px;
     margin-top: 10px;
@@ -151,7 +180,34 @@ a {
     text-align: center;
     line-height: 50px;
 }
+
 .course .more a {
     color: #3787ff;
     font-weight: 700;
+}
+
+.good {
+    height: 80px;
+    margin-top: 20px;
+    box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, .2);
+    line-height: 80px;
+}
+
+.good h3 {
+    float: left;
+    margin-left: 40px;
+}
+
+.goods {
+    float: left;
+}
+
+.goods li {
+    float: left;
+    padding: 0 35px;
+}
+
+.mod {
+    float: right;
+    margin-right: 40px;
 }
