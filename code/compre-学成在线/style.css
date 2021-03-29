@@ -189,25 +189,60 @@ a {
 .good {
     height: 80px;
     margin-top: 20px;
-    box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, .2);
+    box-shadow: 5px 5px 10px 4px rgba(0, 0, 0, .2);
     line-height: 80px;
 }
 
 .good h3 {
     float: left;
     margin-left: 40px;
+    color: #0097e9;
 }
 
 .goods {
     float: left;
+    margin-left: 30px;
 }
 
 .goods li {
     float: left;
-    padding: 0 35px;
+}
+
+.goods li a {
+    color: #050505;
+    border-left: 2px solid grey;
+    padding: 0 30px;
+}
+
+.good a {
+    color: #10abff;
 }
 
 .mod {
     float: right;
     margin-right: 40px;
+}
+
+.box .box-hd {
+    height: 50px;
+    margin-top: 20px;
+}
+
+.box-hd h3 {
+    float: left;
+    font-size: 24px;
+    color: rgb(66, 66, 66);
+}
+
+.box-hd a {
+    float: right;
+    font-size: 16px;
+    color: #888888;
+}
+.box-bd ul li {
+    float: left;
+    height: 450px;
+    width: 337px;
+    background-color: pink;
+    margin: 0 0 20px 20px;
 }
