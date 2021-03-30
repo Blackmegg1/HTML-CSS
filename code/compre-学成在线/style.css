@@ -268,17 +268,75 @@ a {
 }
 
 .box-bd ul li {
+    position: relative;
     float: left;
     height: 450px;
     width: 337px;
     /* background-color: pink; */
     margin: 0 0 20px 20px;
     box-shadow: 5px 5px 5px 4px rgba(0, 0, 0, .1);
+    color: #fff;
 }
 
-.box-bd ul li img {
+.box-bd ul li>img {
     width: 100%;
     height: 71%;
+}
+
+.rank1 {
+    position: absolute;
+    top: -13px;
+    right: -10px;
+    width: 28.8px;
+    height: 40.8px;
+    background: url(images/rank1.png) no-repeat;
+    background-size: cover;
+}
+
+.rank1 .top {
+    /* span转化为block设置宽度 */
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+    color: #e6ac36;
+    text-align: center;
+}
+
+.rank1 .number {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.rank2 {
+    position: absolute;
+    top: -13px;
+    right: -10px;
+    width: 28.8px;
+    height: 40.8px;
+    background: url(images/rank2.png) no-repeat;
+    background-size: cover;
+}
+
+.rank2 .top {
+    /* span转化为block设置宽度 */
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+    color: #b3aea4;
+    text-align: center;
+}
+
+.rank2 .number {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
 }
 
 .box-bd ul li h4 {
