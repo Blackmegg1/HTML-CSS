@@ -16,7 +16,7 @@ a {
 
 .w {
     width: 1800px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .clearfix:before,.clearfix:after {
@@ -103,7 +103,7 @@ a {
     /* 注意这里button的width+input的width必须等于search的width，不然button会掉下去 */
     width: 84px;
     height: 60px;
-    background-color: #0097e9c0;
+    background-color: #0097e9a1;
     background-image: url(images/search.svg);
     background-repeat: no-repeat;
     background-size: 90px 170px;

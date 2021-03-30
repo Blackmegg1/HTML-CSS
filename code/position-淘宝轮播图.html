@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝轮播图</title>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        .ad-box {
+            position: relative;
+            top: 30%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 520px;
+            height: 280px;
+            border-radius: 12px;
+            background-color: #333;
+        }
+
+        .ad-box-all {
+            position: relative;
+            display: block;
+            border-radius: 12px;
+        }
+
+        .ad-box img {
+            display: block;
+            border-radius: 12px;
+        }
+
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            display: block;
+            height: 30px;
+            width: 20px;
+            display: block;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 14px;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .prev {
+            left: 0;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .next {
+            right: 0;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .ad-box i {
+            font-style: normal;
+        }
+
+        .ad-box .nav {
+            position: absolute;
+            left: 50%;
+            bottom: 15px;
+            margin-left: -35px;
+            width: 70px;
+            height: 13px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, .3);
+        }
+
+        .ad-box .nav li {
+            display: block;
+            float: left;
+            height: 8px;
+            width: 8px;
+            background-color: #fff;
+            margin: 3px;
+            border-radius: 50%;
+        }
+
+        .ad-box .nav .selected {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ad-box">
+        <a class="ad-box-all" href="https://www.taobao.com">
+            <img src="../images/advertising.jpg" />
+            <!-- <div class="pointer"></div> -->
+        </a>
+        <a class="prev" href="#">
+            <i>&lt;</i>
+        </a>
+        <a class="next" href="#">
+            <i>&gt;</i>
+        </a>
+        <ul class="nav">
+            <li></li>
+            <li class="selected"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+
+</html>
