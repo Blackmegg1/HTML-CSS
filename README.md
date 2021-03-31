@@ -25,4 +25,7 @@ CSS三大特性、盒子模型
 5. [compre-学成在线](code/compre-学成在线)
 6. [position-淘宝轮播图](code/position-淘宝轮播图.html)
 7. [display-土豆遮罩播放](code/display-土豆遮罩播放.html)
+8. [sprites-lol精灵图](code/sprites-lol精灵图.html)
+9. [text-文字溢出省略显示](code/text-文字溢出省略显示.html)
+10. [inline-页码栏制作](code/inline-页码栏制作.html)
 
