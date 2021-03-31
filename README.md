@@ -18,7 +18,7 @@ CSS三大特性、盒子模型
 
 ## 实例练习
 
-1. [compre-产品模板](code/compre-产品模板.html)
+1. [compre-产品模块](code/compre-产品模块.html)
 2. [compre-快报模板](code/compre-快报模板.html)
 3. [float-常见网页布局](code/float-常见网页布局.html)
 4. [padding-新浪导航栏](code/padding-新浪导航栏.html)
