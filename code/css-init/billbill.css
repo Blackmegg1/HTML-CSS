@@ -1,0 +1,51 @@
+ol, ul {
+    list-style: none
+}
+
+a {
+    color: #212121;
+    /* 链接变色过渡时间 */
+    transition: color .3s
+}
+
+a:hover {
+    /* billbill蓝 */
+    color: #00a1d6
+}
+
+a, a:hover {
+    text-decoration: none
+}
+
+:focus, a:focus {
+    /* 清除外边框 */
+    outline: none
+}
+
+img:not([src]), img[src=""] {
+    opacity: 0
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+* ::selection {
+    background: #73c9e5;
+    color: inherit
+}
+
+* ::-moz-selection {
+    background: #73c9e5;
+    color: inherit
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #505050;
+    font: 12px -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, PingFang SC, Hiragino Sans GB, Microsoft YaHei, sans-serif;
+    /* 抗锯齿 */
+    -webkit-font-smoothing: antialiased
+}

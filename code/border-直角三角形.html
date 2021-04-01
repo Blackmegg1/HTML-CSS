@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角形</title>
+    <style type="text/css">
+        /* 花了一个直角三角形 */
+        i {
+            position: absolute;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-color: transparent white transparent transparent;
+            border-width: 30px 20px 0 0;
+            border-style: solid;
+        }
+
+        .prize {
+            position: relative;
+            width: 200px;
+            height: 30px;
+            margin: 100px auto;
+            border: 1px solid red;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .tejia {
+            display: block;
+            float: left;
+            width: 60%;
+            height: 100%;
+            background-color: red;
+            color: #fff;
+        }
+
+        .yuanjia {
+            display: block;
+            height: 100%;
+            background-color: #fff;
+            font-size: 14px;
+            text-decoration:line-through;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="prize">
+        <i></i>
+        <span class="tejia">￥999</span>
+        <span class="yuanjia">￥3500</span>
+    </div>
+</body>
+
+</html>
