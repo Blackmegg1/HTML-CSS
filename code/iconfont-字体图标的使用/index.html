@@ -22,15 +22,31 @@
         span {
             display: block;
             font-family: 'icomoon';
-            font-size: 500px;
+            font-size: 100px;
             text-align: center;
             margin-top: 10%;
             color: pink;
+        }
+        /* 伪元素选择器 */
+        .box {
+            position: relative;
+            width: 300px;
+            height: 40px;
+            border: 1px solid red;
+        }
+
+        .box::after {
+            position: absolute;
+            right: 20px;
+            content: ">";
+            line-height: 40px;
+            transform: rotate(90deg);
         }
     </style>
 </head>
 
 <body>
+    <div class="box"></div>
     <span></span>
 </body>
 
