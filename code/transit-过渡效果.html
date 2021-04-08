@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: 0px auto;
+        }
+
+        .box {
+            margin-top: 20px;
+            height: 670px;
+            width: 430px;
+            transition: all .3s;
+        }
+
+        .box:hover {
+            /* border: 1px solid orange; */
+            box-shadow: 8px 8px 15px 4px rgba(0, 0, 0, .2)
+        }
+
+        .info {
+            padding: 0 20px;
+        }
+
+        .title {
+            color: rgb(68, 68, 68);
+            font-size: 18px;
+        }
+
+        .info>span {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .prize {
+            margin: 10px auto;
+        }
+
+        .info .now {
+            color: red;
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .info .before {
+            color: rgba(135, 135, 135, 0.767);
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: line-through;
+        }
+
+        .info .bar-text {
+            display: inline-block;
+            height: 20px;
+            line-height: 20px;
+            color: rgb(68, 68, 68);
+            font-size: 15px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .progress-bar {
+            display: inline-block;
+            /* 两个并列的 inline-block 默认是基线对齐的,http://www.zhangxinxu.com/wordpress/2015/08/css-deep-understand-vertical-align-and-line-height/ */
+            vertical-align: bottom;
+            width: 200px;
+            height: 20px;
+            margin: 0px 5px;
+            border: 1px solid red;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            float: left;
+            width: 0%;
+            height: 100%;
+            background-color: red;
+            border-radius: inherit;
+            transition: width 1s;
+        }
+
+        .box:hover .progress {
+            width: 87%;
+        }
+
+        .button {
+            height: 100px;
+            width: 96%;
+            margin-top: 10px;
+            background-color: rgb(192, 45, 45);
+            text-align: center;
+            line-height: 100px;
+            color: white;
+            font-size: 26px;
+            font-weight: 700;
+            transition: color 0.6s;
+        }
+
+        .button:hover {
+            color: rgb(163, 163, 163);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../images/iphone12.jpg" />
+        <div class="info">
+            <p class="title">iphone12s pro max plus 特价大甩卖，买不到吃亏，买得到划算，早买早享受，晚买晚打折</p>
+            <div class="prize">
+                <span class="now">￥9999</span>
+                <span class="before">$8888</span>
+            </div>
+            <div class="bar-text">已售<span class="red">87% </span>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                剩余
+                <span class="red">29</span>
+                件
+            </div>
+        </div>
+        <div class="button">
+            立即抢购
+        </div>
+    </div>
+</body>
+
+</html>
