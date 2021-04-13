@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* CSS3的盒子模型 */
 }
 
 em, i {
@@ -19,6 +20,7 @@ img {
 
 button {
     cursor: pointer;
+
 }
 
 a {
@@ -31,7 +33,9 @@ a:hover {
 }
 
 button, input {
-    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serifv
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serifv;
+    border: 0;
+    outline: none;
 }
 
 body {

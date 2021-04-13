@@ -32,3 +32,93 @@
     background-color: #666;
     margin: 10px 14px;
 }
+
+.arrow-icon::after {
+    content: "\e666";
+    font-family: "iconfont";
+    margin-left: 6px;
+}
+
+.header {
+    position: relative;
+    height: 105px;
+    background-color: pink;
+}
+
+.header .logo {
+    position: absolute;
+    top: 20px;
+    height: 59px;
+    width: 143px;
+}
+
+.header .logo a {
+    display: block;
+    height: 59px;
+    width: 143px;
+    background: url(../images/logo.png) no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #b1191a;
+}
+
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+    /* css3的盒子模型，所以padding不会撑大边框 */
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    color: #fff;
+}
+
+.hotwords {
+    position: absolute;
+    left: 346px;
+    top: 66px;
+}
+
+.hotwords a {
+    margin: 0 8px;
+}
+
+.shopcar {
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 35px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.shopcar::before {
+    content: "\e600";
+    font-family: "iconfont";
+    margin-right: 5px;
+    color: #b1191a;
+}
+
+.shopcar::after {
+    content: "\e665";
+    font-family: "iconfont";
+    margin-left: 5px;
+}
