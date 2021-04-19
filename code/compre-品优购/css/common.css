@@ -101,7 +101,7 @@
     position: absolute;
     right: 60px;
     top: 25px;
-    width: 140px;
+    width: 130px;
     height: 35px;
     border: 1px solid #dfdfdf;
     background-color: #f7f7f7;
@@ -121,4 +121,16 @@
     content: "\e665";
     font-family: "iconfont";
     margin-left: 5px;
+}
+
+.shopcar .count {
+    position: absolute;
+    top: -7px;
+    left: 83px;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 7px 7px 7px 0;
+    color: #fff;
+    background-color: #e60012;
+    padding: 0 5px;
 }
