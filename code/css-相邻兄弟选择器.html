@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相邻兄弟选择器</title>
+    <style>
+        .top *+* {
+            color: red; 
+        }
+                /* 该选择器的意思是选择top下所有元素的任意相邻兄弟 */
+        .next-top+p {
+            color: seagreen;
+        }
+                /* 该选择器的意思是选择next-top的相邻p兄弟 */
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="next-top">
+            <p>1</p>
+        </div>
+        <p>2</p>
+        <p>3</p>
+    </div>
+    <p>4</p>
+    <p>5</p>
+</body>
+
+</html>
